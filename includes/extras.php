@@ -104,3 +104,15 @@ function ethic_post_format_icon() {
      </span>
 <?php }
 }
+
+add_filter( 'woothemes_our_team_member_fields', 'ethic_fields' );
+function ethic_fields( $fields ) {
+    $fields['facebook'] = array(
+        'name'            => __( 'Facebook', 'our-team-by-woothemes' ),
+        'description'     => __( 'Facebook Username', 'our-team-by-woothemes' ),
+        'type'            => 'text',
+        'default'         => '',
+        'section'         => 'info'
+    );
+    return $fields;
+}
