@@ -1003,7 +1003,18 @@ function ethic_customize_register($wp_customize) {
         'title' => __('Social Icons', 'ethic'),
         'priority' => 62,
     ));
-
+    
+    $wp_customize->add_setting('ethic_front_social_icons_check', array(
+        'default' => 1,
+        'sanitize_callback' => 'ethic_sanitize_checkbox',
+    ));
+    $wp_customize->add_control('ethic_front_social_icons_check', array(
+        'label' => __('Show social icons on Front Page', 'ethic'),
+        'section' => 'social_icon_setting',
+        'priority' => 1,
+        'type' => 'checkbox',
+    ));
+    
     // link url
     $wp_customize->add_setting('facebook_link_url', array('default' => __('', 'ethic'),
         'sanitize_callback' => 'ethic_sanitize_text',
@@ -1014,7 +1025,7 @@ function ethic_customize_register($wp_customize) {
         'label' => __('Facebook URL', 'ethic'),
         'section' => 'social_icon_setting',
         'settings' => 'facebook_link_url',
-        'priority' => 1,
+        'priority' => 2,
     ));
 
     // link url
@@ -1027,7 +1038,7 @@ function ethic_customize_register($wp_customize) {
         'label' => __('Twitter URL', 'ethic'),
         'section' => 'social_icon_setting',
         'settings' => 'twitter_link_url',
-        'priority' => 2,
+        'priority' => 3,
     ));
 
     // link url
@@ -1040,7 +1051,7 @@ function ethic_customize_register($wp_customize) {
         'label' => __('Google Plus URL', 'ethic'),
         'section' => 'social_icon_setting',
         'settings' => 'googleplus_link_url',
-        'priority' => 3,
+        'priority' => 4,
     ));
 
     // link url
@@ -1053,7 +1064,7 @@ function ethic_customize_register($wp_customize) {
         'label' => __('Pinterest URL', 'ethic'),
         'section' => 'social_icon_setting',
         'settings' => 'pinterest_link_url',
-        'priority' => 4,
+        'priority' => 5,
     ));
 
     // link url
@@ -1066,7 +1077,7 @@ function ethic_customize_register($wp_customize) {
         'label' => __('Github URL', 'ethic'),
         'section' => 'social_icon_setting',
         'settings' => 'github_link_url',
-        'priority' => 5,
+        'priority' => 6,
     ));
 
     // link url
@@ -1079,7 +1090,7 @@ function ethic_customize_register($wp_customize) {
         'label' => __('Youtube URL', 'ethic'),
         'section' => 'social_icon_setting',
         'settings' => 'youtube_link_url',
-        'priority' => 6,
+        'priority' => 7,
     ));
     
     $wp_customize->add_setting('dribbble_link_url', array('default' => __('', 'ethic'),
@@ -1091,7 +1102,7 @@ function ethic_customize_register($wp_customize) {
         'label' => __('Dribble URL', 'ethic'),
         'section' => 'social_icon_setting',
         'settings' => 'dribbble_link_url',
-        'priority' => 7,
+        'priority' => 8,
     ));
     
     $wp_customize->add_setting('tumblr_link_url', array('default' => __('', 'ethic'),
@@ -1103,7 +1114,7 @@ function ethic_customize_register($wp_customize) {
         'label' => __('Tumblr URL', 'ethic'),
         'section' => 'social_icon_setting',
         'settings' => 'tumblr_link_url',
-        'priority' => 8,
+        'priority' => 9,
     ));
     
     $wp_customize->add_setting('flickr_link_url', array('default' => __('', 'ethic'),
@@ -1115,7 +1126,7 @@ function ethic_customize_register($wp_customize) {
         'label' => __('Flickr URL', 'ethic'),
         'section' => 'social_icon_setting',
         'settings' => 'flickr_link_url',
-        'priority' => 9,
+        'priority' => 10,
     ));
     
     $wp_customize->add_setting('vimeo_link_url', array('default' => __('', 'ethic'),
@@ -1127,7 +1138,7 @@ function ethic_customize_register($wp_customize) {
         'label' => __('Vimeo URL', 'ethic'),
         'section' => 'social_icon_setting',
         'settings' => 'vimeo_link_url',
-        'priority' => 10,
+        'priority' => 11,
     ));
     
     $wp_customize->add_setting('linkedin_link_url', array('default' => __('', 'ethic'),
@@ -1139,7 +1150,7 @@ function ethic_customize_register($wp_customize) {
         'label' => __('Linkedin URL', 'ethic'),
         'section' => 'social_icon_setting',
         'settings' => 'linkedin_link_url',
-        'priority' => 11,
+        'priority' => 12,
     ));
     
     // Add footer text section

@@ -30,7 +30,9 @@
                                    <?php } ?>
                           </ul>
                     </div>
-                    <div class="social-links col-lg-12">
+                    
+                     <?php if(get_theme_mod('ethic_front_social_icons_check')) { ?>
+                        <div class="social-links col-lg-12">
                                 <ul>
                                     <?php if (get_theme_mod('facebook_link_url')) { ?>
                                         <li class="ethic-fb"><a href="<?php echo get_theme_mod('facebook_link_url'); ?>"></a></li>
@@ -67,6 +69,8 @@
                                     <?php } ?>
                                 </ul>
                             </div>
+                     <?php } ?>
+                    
 			<div class="site-footer-inner col-lg-12">
 
 				<div class="site-info">

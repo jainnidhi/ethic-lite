@@ -110,6 +110,14 @@ Mixitup Copyright 2014 KunkaLabs Limited
 Mixitup is license under terms of CC-BY-NC license(http://creativecommons.org/licenses/by-nc/3.0/)
 source: https://github.com/patrickkunka/mixitup
 
+Bootstrap js Copyright 2011-2014 Twitter, Inc
+Bootstrap js Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+source: http://getbootstrap.com/javascript/
+
+Bootstrap Css Copyright 2011-2014 Twitter, Inc
+Bootstrap Css Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+source: http://getbootstrap.com/css/
+
 == Credits ==
 
 Ethic uses the following images licensed under Creative Commons public domain deed CC0
