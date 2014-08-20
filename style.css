@@ -607,8 +607,15 @@ object {
 
 .portfolio h2{
     font-size:20px;
-    text-align:center;
     margin-top:0;
+}
+
+.post-type-archive-portfolio .portfolio h2{
+    text-align:center;
+}
+
+.single-portfolio .portfolio h2 a{
+    color:#111;
 }
 
 .portfolio-buttons{
