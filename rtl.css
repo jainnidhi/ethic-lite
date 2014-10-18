@@ -49,6 +49,11 @@ body {
     float: left;
 }
 
+
+.navbar-toggle{
+    float:none !important;
+}
+
 /* Home Slider */
 
 .slider-wrapper .flex-caption {
@@ -237,6 +242,14 @@ time, address, .post-categories {
         margin-left: 0;
         margin-right:auto;
     }
+    
+    .site-navigation-inner {
+        float: none;
+    }
+    
+    .members-wrap .featured-team-content{
+        margin: 0 auto;
+    }
 }
 
 
@@ -260,6 +273,10 @@ time, address, .post-categories {
    
     .site-branding {
         text-align: right;
+    }
+    
+    .members-wrap .featured-team-content{
+        margin: 0 auto 0 37px;
     }
 
 }

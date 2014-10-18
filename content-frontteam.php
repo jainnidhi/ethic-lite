@@ -27,7 +27,7 @@ if (get_theme_mod('ethic_front_team_members_check')) {
                            <?php } ?>
                   
                    <?php if ( get_theme_mod('team_description') !='' ) {  ?>
-                            <p><?php echo esc_html(get_theme_mod('team_description')); ?></p>
+                            <p><?php echo do_shortcode(esc_html(get_theme_mod('team_description'))); ?></p>
                                      <?php } else { ?>
                                     <p><?php esc_html_e('Members', 'ethic') ?> </p>
                                             <?php } ?>

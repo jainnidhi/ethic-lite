@@ -33,7 +33,7 @@ if (get_theme_mod('ethic_front_featured_posts_check')) {
                   <?php } else {  ?> <h3 class="title"><?php esc_html_e('Blog', 'ethic') ?></h3>
                            <?php } ?>
                   
-                  <?php if ( get_theme_mod('ethic_post_description') !='' ) {  ?><p><?php echo esc_html(get_theme_mod('ethic_post_description')); ?></p>
+                  <?php if ( get_theme_mod('ethic_post_description') !='' ) {  ?><p><?php echo do_shortcode(esc_html(get_theme_mod('ethic_post_description'))); ?></p>
                   <?php } else {  ?> <p><?php esc_html_e('Technology news and updates from around the world', 'ethic') ?></p>
                            <?php } ?>
             </div>
@@ -79,7 +79,7 @@ if (get_theme_mod('ethic_front_featured_posts_check')) {
 
                         </div><!--end .home-featured-post-->
                    <?php  }  else { ?>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 home-featured-post" data-scroll-reveal="enter from the right after 0.3s">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-featured-post" data-scroll-reveal="enter from the right after 0.3s">
 
                             <div class="featured-post-image">
                              

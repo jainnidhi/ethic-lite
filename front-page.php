@@ -54,7 +54,7 @@ get_header();
                 <div class="flex-caption col-lg-6 col-md-6 col-sm-6">
                     <div class="slider-text-container">
                         <h2 class="slider-title"><a href="#"><?php echo esc_html(get_theme_mod('slider_title_one')); ?></a></h2>
-                            <p><?php echo esc_html(get_theme_mod('slider_one_description')); ?></p>
+                            <p><?php echo do_shortcode(esc_html(get_theme_mod('slider_one_description'))); ?></p>
 
                     <?php if ( get_theme_mod('slider_one_link_url') !='' && get_theme_mod('slider_one_link_text') !=''  ) {  ?>
                    <a class="slider-button" href="<?php echo esc_url(get_theme_mod('slider_one_link_url')); ?>">
@@ -83,7 +83,7 @@ get_header();
                                    <?php } ?>
 
                           <?php if ( get_theme_mod('tagline_description') !='' ) {  ?>
-                          <p><?php echo esc_html(get_theme_mod('tagline_description')); ?></p>
+                          <p><?php echo do_shortcode(esc_html(get_theme_mod('tagline_description'))); ?></p>
                                    <?php } else { ?>
                                   <p><?php esc_html_e('Creating your Restaurant & Food based website with Ethic is completely easy.
                                       You just need to perform few tweaks in the theme option panel and your website will be ready to use.
@@ -113,7 +113,7 @@ get_header();
                            <?php } ?>
 
                   <?php if ( get_theme_mod('home_description_one') !='' ) {  ?>
-                  <p><?php echo esc_html(get_theme_mod('home_description_one')); ?></p>
+                  <p><?php echo do_shortcode(esc_html(get_theme_mod('home_description_one'))); ?></p>
                            <?php } else { ?>
                           <p><?php esc_html_e('Showcase your best quality products on home page to grab visitor&rsquo;s attention.', 'ethic') ?> </p>
                                            <?php } ?>
@@ -135,7 +135,7 @@ get_header();
                            <?php } ?>
 
                   <?php if ( get_theme_mod('home_description_two') !='' ) {  ?>
-                  <p><?php echo esc_html(get_theme_mod('home_description_two')); ?></p>
+                  <p><?php echo do_shortcode(esc_html(get_theme_mod('home_description_two'))); ?></p>
                            <?php } else { ?>
                           <p><?php esc_html_e('Show your multiple services that will explore your website among the audience.', 'ethic') ?> </p>
                                            <?php } ?>
@@ -158,7 +158,7 @@ get_header();
                            <?php } ?>
 
                   <?php if ( get_theme_mod('home_description_three') !='' ) {  ?>
-                  <p><?php echo esc_html(get_theme_mod('home_description_three')); ?></p>
+                  <p><?php echo do_shortcode(esc_html(get_theme_mod('home_description_three'))); ?></p>
                            <?php } else { ?>
                           <p><?php esc_html_e('Show testimonials of your clients that will build the trust among the audience.', 'ethic') ?> </p>
                                            <?php } ?>
@@ -180,7 +180,7 @@ get_header();
                   <?php } else {  ?> <h3><?php esc_html_e('Take A Quick Look To Ethic Demo', 'ethic') ?></h3>
                            <?php } ?>
                   
-                  <?php if ( get_theme_mod('video_description') !='' ) {  ?><p><?php echo esc_html(get_theme_mod('video_description')); ?></p>
+                  <?php if ( get_theme_mod('video_description') !='' ) {  ?><p><?php echo do_shortcode(esc_html(get_theme_mod('video_description'))); ?></p>
                   <?php } else {  ?> <p><?php esc_html_e('Why Ethic is a perfect Theme- Watch this quick demo and you will get the answer.', 'ethic') ?></p>
                            <?php } ?>
                    </div>
@@ -190,7 +190,7 @@ get_header();
                            <?php } ?>
                   
                         <?php if ( get_theme_mod('home_video') !='' ) {  ?> 
-                         <?php echo get_theme_mod('home_video'); ?>
+                         <?php echo do_shortcode(get_theme_mod('home_video')); ?>
                           <?php } else { ?>
                        <iframe width="560" height="315" src="//www.youtube.com/embed/j5q780fa1vY" frameborder="0" allowfullscreen></iframe> 
                            <?php } ?>
@@ -265,7 +265,7 @@ get_header();
                         <?php if ( get_theme_mod('tslider_one_description') !='' || get_theme_mod('client_name_url_one') !='' || get_theme_mod('client_name_one') !='' ) {  ?>
                         <div class="flex-caption">
                             <div class="client-testimonial">
-                                <?php echo wpautop(esc_html(get_theme_mod('tslider_one_description'))); ?>
+                                <?php echo do_shortcode(wpautop(esc_html(get_theme_mod('tslider_one_description')))); ?>
                             </div>
                             <div class="client-name">
                                  <a href="<?php echo esc_url(get_theme_mod('client_name_url_one')); ?>">
@@ -287,7 +287,7 @@ get_header();
                      <?php if ( get_theme_mod('tslider_two_description') !='' || get_theme_mod('client_name_url_two') !='' || get_theme_mod('client_name_two') !='' ) {  ?>
                         <div class="flex-caption">
                             <div class="client-testimonial">
-                                <?php echo wpautop(esc_html(get_theme_mod('tslider_two_description'))); ?>
+                                <?php echo do_shortcode(wpautop(esc_html(get_theme_mod('tslider_two_description')))); ?>
                             </div>
                             <div class="client-name">
                                  <a href="<?php echo esc_url(get_theme_mod('client_name_url_two')); ?>">
@@ -323,7 +323,7 @@ get_header();
                           <?php } else {  ?> <h3><?php esc_html_e('Contact Us', 'ethic') ?></h3>
                                    <?php } ?>
                           
-                           <?php if ( get_theme_mod('contact_description') !='' ) {  ?><p class="description"><?php echo esc_html(get_theme_mod('contact_description')); ?></p>
+                           <?php if ( get_theme_mod('contact_description') !='' ) {  ?><p class="description"><?php echo do_shortcode(esc_html(get_theme_mod('contact_description'))); ?></p>
 
                           <?php } else {  ?> <p class="description"><?php esc_html_e('Send in your queries and we will get back to you!!', 'ethic') ?></p>
                                    <?php } ?>
@@ -353,7 +353,7 @@ get_header();
                           
         <div class="map-code">
                         <?php if ( get_theme_mod('home_map') !='' ) {  ?> 
-                         <?php echo get_theme_mod('home_map'); ?>
+                         <?php echo do_shortcode(get_theme_mod('home_map')); ?>
                           <?php } else { ?>
                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.3373274884793!2d73.68860100000003!3d24.57755199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e564ac2e9c8d%3A0x87292b7f148a532d!2sIdeaBox+Creations!5e0!3m2!1sen!2sin!4v1406726113881" width="100%" height="450px" frameborder="0" style="border:0"></iframe>
                            <?php } ?>

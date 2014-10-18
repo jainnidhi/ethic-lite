@@ -251,6 +251,8 @@ object {
     margin:0;
     width:100%;
     border-radius:0;
+    background:#000;
+    color:#fff;
 }
 
 .navbar-header{
@@ -260,10 +262,17 @@ object {
 .sr-only{
     overflow:visible;
     position:relative;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .navbar-toggle .icon-bar{
     margin-top:-20px;
+    background-color:#fff !important;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background:#000;
 }
 
 /* Home Slider */
@@ -849,6 +858,19 @@ article .page-header{
 
 .post-image{
     margin-bottom:20px;
+    position:relative;
+}
+
+.hentry .post_format{
+    left: 0;
+    background: #009cee;
+    padding: 10px 15px;
+    font-size: 24px;
+    color: #fff;
+    min-width: 46px;
+    min-height: 46px;
+    position: absolute;
+    top: 0;
 }
 
 .more-link{
@@ -1269,7 +1291,8 @@ input[type="search"]{
 .ethic-red .pager li > a:hover,
 .ethic-red .portfolio-buttons a,
 .ethic-red .dropdown-menu li a:hover,
-.ethic-red.post-type-archive-portfolio .pagination .page-numbers:hover{
+.ethic-red.post-type-archive-portfolio .pagination .page-numbers:hover,
+.ethic-red .hentry .post_format{
     background:#f14141;
 }
 
@@ -1305,7 +1328,8 @@ input[type="search"]{
 .ethic-green .pager li > a:hover,
 .ethic-green .portfolio-buttons a,
 .ethic-green .dropdown-menu li a:hover,
-.ethic-green.post-type-archive-portfolio .pagination .page-numbers:hover{
+.ethic-green.post-type-archive-portfolio .pagination .page-numbers:hover,
+.ethic-green .hentry .post_format{
     background:#3DB943;
 }
 
@@ -1383,6 +1407,25 @@ input[type="search"]{
         float: none;
         margin-right: 0;
     }
+
+    .navbar-nav {
+        margin: 0;
+    }
+
+    .dropdown-submenu>a:after{
+        position:absolute;
+        right:60%;
+        top:7%;
+    }
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .home-featured-post img{
+        width:100%;
+    }
 }
 
 
@@ -1421,5 +1464,20 @@ input[type="search"]{
 
     .slider-image {
         padding: 0 15px;
+    }
+
+    .dropdown-submenu>a:after{
+        position:relative;
+        right:0;
+        top:0;
+    }
+
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    
+    .home-featured-post img{
+        width:auto;
     }
 }

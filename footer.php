@@ -35,37 +35,37 @@
                         <div class="social-links col-lg-12">
                                 <ul>
                                     <?php if (get_theme_mod('facebook_link_url')) { ?>
-                                        <li class="ethic-fb"><a href="<?php echo get_theme_mod('facebook_link_url'); ?>"></a></li>
+                                        <li class="ethic-fb"><a href="<?php echo esc_url(get_theme_mod('facebook_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('twitter_link_url')) { ?>
-                                        <li class="ethic-twitter"><a href="<?php echo  get_theme_mod('twitter_link_url'); ?>"></a></li>
+                                        <li class="ethic-twitter"><a href="<?php echo  esc_url(get_theme_mod('twitter_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('googleplus_link_url')) { ?>
-                                        <li class="ethic-gplus"><a href="<?php echo get_theme_mod('googleplus_link_url'); ?>"></a></li>
+                                        <li class="ethic-gplus"><a href="<?php echo esc_url(get_theme_mod('googleplus_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if( get_theme_mod('pinterest_link_url')) { ?>
-                                        <li class="ethic-pinterest"><a href="<?php echo get_theme_mod('pinterest_link_url'); ?>"></a></li>
+                                        <li class="ethic-pinterest"><a href="<?php echo esc_url(get_theme_mod('pinterest_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if (get_theme_mod('github_link_url')) { ?>
-                                        <li class="ethic-github"><a href="<?php echo get_theme_mod('github_link_url'); ?>"></a></li>
+                                        <li class="ethic-github"><a href="<?php echo esc_url(get_theme_mod('github_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('youtube_link_url')) { ?>
-                                        <li class="ethic-youtube"><a href="<?php echo get_theme_mod('youtube_link_url'); ?>"></a></li>
+                                        <li class="ethic-youtube"><a href="<?php echo esc_url(get_theme_mod('youtube_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('dribbble_link_url')) { ?>
-                                        <li class="ethic-dribbble"><a href="<?php echo get_theme_mod('dribbble_link_url'); ?>"></a></li>
+                                        <li class="ethic-dribbble"><a href="<?php echo esc_url(get_theme_mod('dribbble_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('tumblr_link_url')) { ?>
-                                        <li class="ethic-tumblr"><a href="<?php echo get_theme_mod('tumblr_link_url'); ?>"></a></li>
+                                        <li class="ethic-tumblr"><a href="<?php echo esc_url(get_theme_mod('tumblr_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('flickr_link_url')) { ?>
-                                        <li class="ethic-flickr"><a href="<?php echo get_theme_mod('flickr_link_url'); ?>"></a></li>
+                                        <li class="ethic-flickr"><a href="<?php echo esc_url(get_theme_mod('flickr_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('vimeo_link_url')) { ?>
-                                        <li class="ethic-vimeo"><a href="<?php echo get_theme_mod('vimeo_link_url'); ?>"></a></li>
+                                        <li class="ethic-vimeo"><a href="<?php echo esc_url(get_theme_mod('vimeo_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('linkedin_link_url')) { ?>
-                                        <li class="ethic-linkedin"><a href="<?php echo get_theme_mod('linkedin_link_url'); ?>"></a></li>
+                                        <li class="ethic-linkedin"><a href="<?php echo esc_url(get_theme_mod('linkedin_link_url')); ?>"></a></li>
                                     <?php } ?>
                                 </ul>
                             </div>

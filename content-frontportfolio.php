@@ -29,7 +29,7 @@ if (get_theme_mod('ethic_front_featured_portfolio_check')) {
                            <?php } ?>
                   
                    <?php if ( get_theme_mod('portfolio_description') !='' ) {  ?>
-                            <p><?php echo esc_html(get_theme_mod('portfolio_description')); ?></p>
+                            <p><?php echo do_shortcode(esc_html(get_theme_mod('portfolio_description'))); ?></p>
                                      <?php } else { ?>
                                     <p><?php esc_html_e('This is the Portfolio Description block.', 'ethic') ?> </p>
                                             <?php } ?>
