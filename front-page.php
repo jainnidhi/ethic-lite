@@ -34,10 +34,10 @@ get_header();
                     </div>
                 <div class="flex-caption col-lg-6 col-md-6 col-sm-6">
                     <div class="slider-text-container">
-                     <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'ethic') ?></a></h2>
+                     <h2 class="slider-title"><a href="#"><?php esc_html_e('Live Customization', 'ethic') ?></a></h2>
                           <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'ethic') ?> </p>
                            <a class="slider-button" href="#">
-                            <?php esc_html_e('Start Building Your Website Now', 'ethic') ?>
+                            <?php esc_html_e('Read More', 'ethic') ?>
                         </a>
                     </div>
                 </div>
@@ -85,9 +85,12 @@ get_header();
                           <?php if ( get_theme_mod('tagline_description') !='' ) {  ?>
                           <p><?php echo do_shortcode(esc_html(get_theme_mod('tagline_description'))); ?></p>
                                    <?php } else { ?>
-                                  <p><?php esc_html_e('Creating your Restaurant & Food based website with Ethic is completely easy.
-                                      You just need to perform few tweaks in the theme option panel and your website will be ready to use.
-                                      Showcase all important features of your website on homepage.', 'ethic') ?> </p>
+                                  <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque '
+                                          . 'vitae vulputate felis, ut vestibulum tortor. Curabitur vel eros ut arcu imperdiet pulvinar.'
+                                          . ' Phasellus accumsan sit amet leo et rhoncus. Suspendisse massa risus, elementum vel neque et, '
+                                          . 'fringilla porta arcu. Ut ullamcorper, dui vitae pellentesque vulputate, diam mauris rhoncus lectus,'
+                                          . ' in accumsan leo enim nec est. Sed sapien felis, facilisis at felis nec, suscipit facilisis dui.'
+                                          . ' Mauris pulvinar congue tortor sed laoreet.', 'ethic') ?> </p>
                                                    <?php } ?>
                     </div>
                 </div><!-- /.row -->
@@ -109,13 +112,13 @@ get_header();
 
 
                            <?php if ( get_theme_mod('home_title_one') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_title_one')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Our Products', 'ethic') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Static Front Page', 'ethic') ?></h3>
                            <?php } ?>
 
                   <?php if ( get_theme_mod('home_description_one') !='' ) {  ?>
                   <p><?php echo do_shortcode(esc_html(get_theme_mod('home_description_one'))); ?></p>
                            <?php } else { ?>
-                          <p><?php esc_html_e('Showcase your best quality products on home page to grab visitor&rsquo;s attention.', 'ethic') ?> </p>
+                          <p><?php esc_html_e('Go to settings > reading and set the front paget to display a static page.', 'ethic') ?> </p>
                                            <?php } ?>
 
                     </div>
@@ -131,13 +134,13 @@ get_header();
 
 
                            <?php if ( get_theme_mod('home_title_two') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_title_two')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Our Services', 'ethic') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Live Coustomization', 'ethic') ?></h3>
                            <?php } ?>
 
                   <?php if ( get_theme_mod('home_description_two') !='' ) {  ?>
                   <p><?php echo do_shortcode(esc_html(get_theme_mod('home_description_two'))); ?></p>
                            <?php } else { ?>
-                          <p><?php esc_html_e('Show your multiple services that will explore your website among the audience.', 'ethic') ?> </p>
+                          <p><?php esc_html_e('Click the customize link under appearance to start building your site.', 'ethic') ?> </p>
                                            <?php } ?>
 
                     </div>
@@ -154,13 +157,13 @@ get_header();
 
 
                            <?php if ( get_theme_mod('home_title_three') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_title_three')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Our Clients', 'ethic') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Header Image', 'ethic') ?></h3>
                            <?php } ?>
 
                   <?php if ( get_theme_mod('home_description_three') !='' ) {  ?>
                   <p><?php echo do_shortcode(esc_html(get_theme_mod('home_description_three'))); ?></p>
                            <?php } else { ?>
-                          <p><?php esc_html_e('Show testimonials of your clients that will build the trust among the audience.', 'ethic') ?> </p>
+                          <p><?php esc_html_e('Upload a custom header image and hide the site title and tagline.', 'ethic') ?> </p>
                                            <?php } ?>
 
                     </div>
@@ -192,7 +195,7 @@ get_header();
                         <?php if ( get_theme_mod('home_video') !='' ) {  ?> 
                          <?php echo do_shortcode(get_theme_mod('home_video')); ?>
                           <?php } else { ?>
-                       <iframe width="560" height="315" src="//www.youtube.com/embed/j5q780fa1vY" frameborder="0" allowfullscreen></iframe> 
+                       <p> You can add video embed code here using "Home Video Settings" in Theme Customizer. </p> 
                            <?php } ?>
                     </div>
                
