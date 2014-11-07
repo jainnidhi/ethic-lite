@@ -1253,20 +1253,6 @@ input[type="search"]{
     padding:10px 0;
 }
 
-.contact-details #email:before {
-    font-family: "FontAwesome";
-    content: "\f0e0";
-    margin-right: 10px;
-    color: #009cee;
-}
-
-.contact-details #phone:before {
-    font-family: "FontAwesome";
-    content: "\f095";
-    margin-right: 10px;
-    color: #009cee;
-}
-
 .contact-details li {
     list-style: none;
     margin-bottom: 10px;
@@ -1331,8 +1317,6 @@ input[type="search"]{
 
 .ethic-red .site-title a,
 .ethic-red .client-name a,
-.ethic-red .contact-details #email:before,
-.ethic-red .contact-details #phone:before,
 .ethic-red .sidebar li:before,
 .ethic-red .comment-reply-link,
 .ethic-red .sidebar a:hover{
@@ -1369,8 +1353,6 @@ input[type="search"]{
 
 .ethic-green .site-title a,
 .ethic-green .client-name a,
-.ethic-green .contact-details #email:before,
-.ethic-green .contact-details #phone:before,
 .ethic-green .sidebar li:before,
 .ethic-green .comment-reply-link,
 .ethic-green .sidebar a:hover{
