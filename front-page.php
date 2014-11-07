@@ -320,7 +320,8 @@ get_header();
     <section class="contact-area">
         <div class="container contact-wrap">
             <div class="row">
-                <div class="home-contact-form col-lg-12">
+                <div class="home-contact-form col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-offset-3">
+                    <div class="form">
                      <?php if ( get_theme_mod('contact_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('contact_title')); ?></h3>
 
                           <?php } else {  ?> <h3><?php esc_html_e('Contact Us', 'ethic') ?></h3>
@@ -339,6 +340,7 @@ get_header();
                                 . 'from Gravity Forms or Contact Form7 or any other plugin of your choice.', 'ethic'); ?> 
                           <?php } ?>
                         </div>
+                    </div><!-- /.form -->
                 </div>
             </div>
         </div>

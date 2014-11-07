@@ -767,24 +767,13 @@ object {
 .contact-area form input[type='submit'] {
     font-size: 21px;
     padding: 6px 18px;
-    border: none;
+    border: 1px solid #BDBDBD;
     margin-bottom: 25px;
     color: #111;
     background: #fff;
-    float: left;
+    width:100%;
 }
 
-.contact-area form p:nth-child(2),
-.contact-area form p:nth-child(3),
-.contact-area form p:nth-child(4){
-    width:32.7%;
-    float:left;
-    margin-right:10px;
-}
-
-.contact-area form p:nth-child(4){
-    margin-right:0;
-}
 
 .contact-area form input[type="text"],
 .contact-area form input[type="email"],
@@ -797,7 +786,35 @@ object {
 .home-contact-form h3,
 .home-contact-form .description{
     text-align:center;
-    color:#fff;
+    color:#666;
+}
+
+.home-contact-form h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position:relative;
+    padding-bottom:10px;
+}
+
+.home-contact-form h3:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background-color: #eeeeee;
+    background-color: rgba(0,0,0,0.1);
+    left: 50%;
+    top: 100%;
+    margin-left: -40px;
+}
+
+
+.home-contact-form .form{
+    margin: 60px auto;
+    padding: 40px 30px;
+    background-color: rgba(255,255,255,0.95);
+    color:#666;
 }
 
 .contact-map{
@@ -1038,6 +1055,13 @@ time, address, .post-categories {
 
 #respond form textarea{
     clear:both;
+}
+
+input[type="submit"]{
+    background:#009cee;
+    color:#fff;
+    padding: 8px 26px;
+    border:none;
 }
 
 /* back to top */
@@ -1292,7 +1316,8 @@ input[type="search"]{
 .ethic-red .portfolio-buttons a,
 .ethic-red .dropdown-menu li a:hover,
 .ethic-red.post-type-archive-portfolio .pagination .page-numbers:hover,
-.ethic-red .hentry .post_format{
+.ethic-red .hentry .post_format,
+.ethic-red input[type="submit"]{
     background:#f14141;
 }
 
@@ -1329,7 +1354,8 @@ input[type="search"]{
 .ethic-green .portfolio-buttons a,
 .ethic-green .dropdown-menu li a:hover,
 .ethic-green.post-type-archive-portfolio .pagination .page-numbers:hover,
-.ethic-green .hentry .post_format{
+.ethic-green .hentry .post_format,
+.ethic-green input[type="submit"]{
     background:#3DB943;
 }
 
@@ -1431,18 +1457,6 @@ input[type="search"]{
 
 @media (min-width:768px){
 
-
-    .contact-area form p:nth-child(2), 
-    .contact-area form p:nth-child(3), 
-    .contact-area form p:nth-child(4) {
-        width: 32.7%;
-        float: left;
-        margin-right: 10px;
-    }
-
-    .contact-area form p:nth-child(4) {
-        margin-right: 0;
-    }
     .site-navigation-inner{
         float:right;
         padding:13px 0;
