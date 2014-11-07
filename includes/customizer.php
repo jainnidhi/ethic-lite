@@ -505,7 +505,7 @@ function ethic_customize_register($wp_customize) {
         'sanitize_callback' => 'ethic_sanitize_checkbox',
     ));
     $wp_customize->add_control('ethic_hide_sample_team', array(
-        'label' => __('Hide sample portfolio on Front Page', 'ethic'),
+        'label' => __('Hide sample team on Front Page', 'ethic'),
         'section' => 'ethic_team_settings',
         'priority' => 2,
         'type' => 'checkbox',
