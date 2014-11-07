@@ -500,6 +500,17 @@ function ethic_customize_register($wp_customize) {
         'type' => 'checkbox',
     ));
     
+    $wp_customize->add_setting('ethic_hide_sample_team', array(
+        'default' => 1,
+        'sanitize_callback' => 'ethic_sanitize_checkbox',
+    ));
+    $wp_customize->add_control('ethic_hide_sample_team', array(
+        'label' => __('Hide sample portfolio on Front Page', 'ethic'),
+        'section' => 'ethic_team_settings',
+        'priority' => 2,
+        'type' => 'checkbox',
+    ));
+    
     $wp_customize->add_setting('ethic_team_background_color', array(
         'default' => '#ffffff',
         'sanitize_callback' => 'ethic_sanitize_hex_color',
@@ -510,7 +521,7 @@ function ethic_customize_register($wp_customize) {
         'label' => 'Section Background color',
         'section' => 'ethic_team_settings',
         'settings' => 'ethic_team_background_color',
-        'priority' => 2,
+        'priority' => 3,
             )
     ));
 
@@ -523,7 +534,7 @@ function ethic_customize_register($wp_customize) {
         'label' => __('Section Title', 'ethic'),
         'section' => 'ethic_team_settings',
         'settings' => 'ethic_team_title',
-        'priority' => 3,
+        'priority' => 4,
     ));
 
     $wp_customize->add_setting('team_description', array('default' => '',
@@ -535,7 +546,7 @@ function ethic_customize_register($wp_customize) {
         'label' => __('Description', 'ethic'),
         'section' => 'ethic_team_settings',
         'settings' => 'team_description',
-        'priority' => 4,
+        'priority' => 5,
     )));
 
     $wp_customize->add_setting(

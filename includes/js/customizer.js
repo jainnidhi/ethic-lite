@@ -145,13 +145,13 @@ jQuery(document).ready(function($) {
 
     wp.customize('ethic_team_title', function(value) {
         value.bind(function(to) {
-            $('.team-member-area h3').text(to);
+            $('.team-member-title-area h3').text(to);
         });
     });
 
     wp.customize('team_description', function(value) {
         value.bind(function(to) {
-            $('.team-member-area p').text(to);
+            $('.team-member-title-area p').text(to);
         });
     });
   

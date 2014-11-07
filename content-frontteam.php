@@ -133,7 +133,8 @@ if (get_theme_mod('ethic_front_team_members_check')) {
 </section>
       
 <?php
-} else { // end Featured team query ?>
+} if (!get_theme_mod('ethic_front_team_members_check') && !get_theme_mod('ethic_hide_sample_team')) 
+    { // end Featured team query ?>
   <section class="team-member-area">
       <div class="container">
                 <div class="row">
